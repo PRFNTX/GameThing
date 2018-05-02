@@ -1,0 +1,6 @@
+*~
+*.swp
+*.swo
+.fscache
+node_modules/*
+npm-debug.log

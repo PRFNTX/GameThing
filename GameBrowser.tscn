@@ -1,0 +1,563 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://GameBrowser.gd" type="Script" id=1]
+[ext_resource path="res://Assets/border-box.png" type="Texture" id=2]
+
+[node name="GameBrowser" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+
+[node name="Decks" type="Node2D" parent="." index="0"]
+
+visible = false
+
+[node name="Decks" type="OptionButton" parent="Decks" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 197.0
+margin_top = 56.0
+margin_right = 327.0
+margin_bottom = 76.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+action_mode = 0
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 0
+selected = -1
+items = [  ]
+
+[node name="DeckList" type="ItemList" parent="Decks" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 81.0
+margin_right = 397.0
+margin_bottom = 419.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+items = [  ]
+select_mode = 0
+icon_mode = 1
+fixed_icon_size = Vector2( 0, 0 )
+
+[node name="Select" type="Button" parent="Decks" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 286.0
+margin_top = 426.0
+margin_right = 395.0
+margin_bottom = 446.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Confirm Choice"
+flat = false
+align = 1
+
+[node name="lbl_decks" type="Label" parent="Decks" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 79.0
+margin_top = 60.0
+margin_right = 154.0
+margin_bottom = 74.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Select Deck"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Games" type="Node2D" parent="." index="1"]
+
+position = Vector2( 50.337, 65.0699 )
+
+[node name="lbl_Games" type="Label" parent="Games" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_top = -23.0
+margin_right = 230.0
+margin_bottom = -9.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Open Games"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Join" type="Button" parent="Games" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 4.0
+margin_top = 341.0
+margin_right = 81.0
+margin_bottom = 361.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Join Game"
+flat = false
+align = 1
+
+[node name="Create" type="Button" parent="Games" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 93.0
+margin_top = 341.0
+margin_right = 188.0
+margin_bottom = 361.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Create Game"
+flat = false
+align = 1
+
+[node name="GameName" type="LineEdit" parent="Games" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 196.0
+margin_top = 337.0
+margin_right = 369.0
+margin_bottom = 361.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_text = "enter game name..."
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "Placeholder" ]
+
+[node name="Games" type="ItemList" parent="Games" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 2.0
+margin_top = 5.0
+margin_right = 372.0
+margin_bottom = 333.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+items = [  ]
+select_mode = 0
+icon_mode = 1
+fixed_icon_size = Vector2( 0, 0 )
+
+[node name="Refresh" type="Button" parent="Games" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 8.0
+margin_top = -19.0
+margin_right = 87.0
+margin_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Refresh"
+flat = false
+align = 1
+
+[node name="Owner" type="Container" parent="." index="2"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 524.0
+margin_top = 71.0
+margin_right = 924.0
+margin_bottom = 221.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Visibility" ]
+
+[node name="lbl_Name" type="Label" parent="Owner" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 137.0
+margin_top = 63.0
+margin_right = 253.0
+margin_bottom = 77.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Player Name Here"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="Owner" index="1"]
+
+position = Vector2( 197.056, 75.527 )
+scale = Vector2( 1.33152, 0.748528 )
+texture = ExtResource( 2 )
+
+[node name="is_ready" type="Label" parent="Owner" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 239.0
+margin_top = 99.0
+margin_right = 296.0
+margin_bottom = 113.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "waiting..."
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="DeckName" type="Label" parent="Owner" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 79.0
+margin_top = 97.0
+margin_right = 119.0
+margin_bottom = 111.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Change_o" type="Button" parent="Owner" index="4"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 260.0
+margin_top = 27.0
+margin_right = 354.0
+margin_bottom = 47.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Change Deck"
+flat = false
+align = 1
+
+[node name="Challenger" type="Container" parent="." index="3"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 525.0
+margin_top = 236.0
+margin_right = 925.0
+margin_bottom = 386.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Change_c" type="Button" parent="Challenger" index="0"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 261.0
+margin_top = 27.0
+margin_right = 355.0
+margin_bottom = 47.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Change Deck"
+flat = false
+align = 1
+
+[node name="DeckName" type="Label" parent="Challenger" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 77.0
+margin_top = 97.0
+margin_right = 117.0
+margin_bottom = 111.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="is_ready" type="Label" parent="Challenger" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 241.0
+margin_top = 99.0
+margin_right = 298.0
+margin_bottom = 113.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "waiting..."
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="lbl_Name" type="Label" parent="Challenger" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 137.0
+margin_top = 63.0
+margin_right = 253.0
+margin_bottom = 77.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Player Name Here"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="Challenger" index="4"]
+
+position = Vector2( 197.056, 75.527 )
+scale = Vector2( 1.33152, 0.748528 )
+texture = ExtResource( 2 )
+
+[node name="Start" type="Button" parent="." index="4"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 813.0
+margin_top = 414.0
+margin_right = 896.0
+margin_bottom = 434.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Start Game"
+flat = false
+align = 1
+
+[node name="Leave" type="Button" parent="." index="5"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 572.0
+margin_top = 411.0
+margin_right = 663.0
+margin_bottom = 431.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Leave Game"
+flat = false
+align = 1
+
+[node name="Button" type="Button" parent="." index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 21.0
+margin_top = 560.0
+margin_right = 104.0
+margin_bottom = 580.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Main Menu"
+flat = false
+align = 1
+
+[connection signal="item_selected" from="Decks/Decks" to="." method="_on_Decks_item_selected"]
+
+[connection signal="pressed" from="Decks/Select" to="." method="_on_Select_pressed"]
+
+[connection signal="pressed" from="Games/Join" to="." method="_on_Join_pressed"]
+
+[connection signal="pressed" from="Games/Create" to="." method="_on_Create_pressed"]
+
+[connection signal="item_selected" from="Games/Games" to="." method="_on_Games_item_selected"]
+
+[connection signal="pressed" from="Games/Refresh" to="." method="_on_Refresh_pressed"]
+
+[connection signal="pressed" from="Owner/Change_o" to="." method="_on_Change_o_pressed"]
+
+[connection signal="pressed" from="Challenger/Change_c" to="." method="_on_Change_c_pressed"]
+
+[connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
+
+[connection signal="pressed" from="Leave" to="." method="_on_Leave_pressed"]
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+
+
