@@ -48,13 +48,13 @@ var socket_active = false
 
 func socket_start():
 	if !socket_active:
-		websocket.start('54.244.61.234',443)
+		websocket.start('54.201.23.78',443)
 		websocket.set_reciever(self,'_on_message_recieved')
 		websocket.send({'greeting':user.username})
 		socket_active=true
 
 
-const dirPath='res://cards/'
+const dirPath='res://Cards/'
 func load_cards():
 	var dir = Directory.new()
 	dir.open(dirPath)

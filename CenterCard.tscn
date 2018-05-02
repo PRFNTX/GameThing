@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Assets/War/BaseMidLocation.png" type="Texture" id=1]
 
-[node name="Card" type="Node2D" index="0"]
+[node name="Card" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="." index="0"]
 

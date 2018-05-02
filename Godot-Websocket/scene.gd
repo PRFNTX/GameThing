@@ -20,7 +20,7 @@ func _ready():
 	print( get_tree() )
 	
 	websocket = preload('websocket.gd').new(self)
-	websocket.start('54.244.61.234',443)
+	websocket.start('54.201.23.78',443)
 	websocket.set_reciever(self,'_on_message_recieved')
 
 func _on_message_recieved(msg):
