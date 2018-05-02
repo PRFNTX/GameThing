@@ -1,7 +1,7 @@
 extends Node2D
 
-onready var globals = get_node('/root/master')
-onready var HTTP = get_node('/root/HTTP')
+onready var globals = get_node('/root/globals')
+onready var HTTP = get_node('/root/HTTPScript')
 
 var method_login = true
 func _ready():
@@ -52,7 +52,6 @@ func request(endpoint):
 		headers = http.get_response_headers_as_dictionary()
 		print("code: ", http.get_response_code())
 		print("**headers:\\n", headers)
-		
 		HTTP.authentication_token = headers['authenticate']
 	
 		globals.set_scene('title')

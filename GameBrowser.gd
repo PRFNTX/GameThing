@@ -1,6 +1,6 @@
 extends Node2D
 
-onready var globals = get_node('/root/master')
+onready var globals = get_node('/root/globals')
 
 var socket_events = ['join','close','leave','start','open','collision']
 # class member variables go here, for example:

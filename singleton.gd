@@ -1,7 +1,6 @@
 extends Node
 
-
-onready var HTTP = get_node('/root/HTTP')
+onready var HTTP = get_node('/root/HTTPScript')
 
 var scenes = {'game':"res://Game.tscn",'title':'res://Title.tscn', 'deck':'res://EditDeck.tscn','login':'res://Login.tscn','browse_games':'res://GameBrowser.tscn'}
 var card_resources = {}

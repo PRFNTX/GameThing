@@ -1,7 +1,7 @@
 extends Node2D
 
 onready var HTTP = get_node('/root/HTTP')
-onready var globals = get_node('/root/master')
+onready var globals = get_node('/root/globals')
 
 export(PackedScene) var DeckListEdit
 

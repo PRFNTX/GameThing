@@ -1,6 +1,6 @@
 extends Node2D
 
-onready var globals = get_node("/root/master")
+onready var globals = get_node("/root/globals")
 
 func _ready():
 	for deck in globals.deck_list.keys():
